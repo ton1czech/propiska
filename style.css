@@ -64,6 +64,10 @@ h3 {
   font-size: 2em;
 }
 
+p {
+  font-size: 1em;
+}
+
 header {
   margin: 2rem 0 7rem 0;
 }
@@ -100,4 +104,12 @@ main section#about .text-container {
   margin: 7rem 20% 0 20%;
   top: 0;
   left: 0;
+}
+
+footer {
+  padding: 10rem 0 10rem 0;
+}
+
+footer p {
+  text-align: center;
 }

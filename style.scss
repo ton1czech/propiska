@@ -65,6 +65,10 @@ h3 {
   font-size: 2em;
 }
 
+p {
+  font-size: 1em;
+}
+
 header {
   margin: 2rem 0 7rem 0;
 
@@ -106,5 +110,13 @@ main {
       top: 0;
       left: 0;
     }
+  }
+}
+
+footer {
+  padding: 10rem 0 10rem 0;
+
+  p {
+    text-align: center;
   }
 }
