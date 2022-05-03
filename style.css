@@ -3,7 +3,8 @@
 :root::after,
 :root::before {
   --clr-pri: #09090a;
-  --clr-sec: #44b09f;
+  --clr-sec: #131313;
+  --clr-ctx: #87f9bb;
   --clr-txt: #e2e2e2;
 }
 
@@ -25,6 +26,10 @@ body {
   margin: auto;
 }
 
+.spacer {
+  margin-bottom: 10rem;
+}
+
 img {
   width: 100%;
 }
@@ -35,12 +40,28 @@ a {
   font-size: 1em;
 }
 
+a:hover {
+  color: var(--clr-ctx);
+}
+
 ul {
   list-style-type: none;
 }
 
+h1 {
+  font-size: 6em;
+}
+
+h2 {
+  font-size: 4em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
 header {
-  padding: 1rem 0 0 0;
+  margin: 2rem 0 7rem 0;
 }
 
 header nav {
@@ -57,5 +78,19 @@ header nav .logo {
 header nav ul {
   display: flex;
   align-items: center;
-  gap: 1.5em;
+  gap: 1.5rem;
+}
+
+main section#intro h1 {
+  text-align: right;
+  color: var(--clr-ctx);
+}
+
+main section#intro h3 {
+  margin: 12rem 0 6rem 0;
+  text-align: center;
+}
+
+main section#about {
+  background: #131313;
 }
