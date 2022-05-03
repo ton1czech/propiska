@@ -5,7 +5,7 @@
 :root::before {
   --clr-pri: #09090a;
   --clr-sec: #131313;
-  --clr-ctx: #87f9bb;
+  --clr-ctx: #40b66b;
   --clr-txt: #e2e2e2;
 }
 
@@ -29,6 +29,10 @@ body {
 
 .spacer {
   margin-bottom: 10rem;
+}
+
+.image-container {
+  position: relative;
 }
 
 img {
@@ -96,6 +100,11 @@ main {
   }
 
   section#about {
-    background: #131313;
+    .text-container {
+      position: absolute;
+      margin: 7rem 20% 0 20%;
+      top: 0;
+      left: 0;
+    }
   }
 }
