@@ -131,7 +131,7 @@ main section#about {
 }
 
 main section#about h2 {
-  margin-bottom: 1rem;
+  margin-bottom: 1.4rem;
 }
 
 main section#about h2:not(:first-child) {
@@ -139,7 +139,7 @@ main section#about h2:not(:first-child) {
 }
 
 main section#about p {
-  margin-bottom: 1.7rem;
+  margin-bottom: 1.2rem;
 }
 
 main section#about span {
