@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Kurale&family=Montserrat:wght@200;400;700;900&display=swap");
-:root,
-:root::after,
-:root::before {
+:root {
   --clr-pri: #09090a;
-  --clr-sec: #131313;
+  --clr-sec: #191919;
+  --clr-thr: #4e4e4e;
   --clr-ctx: #40b66b;
   --clr-txt: #e2e2e2;
+  --clr-bar: #474747;
 }
 
 * {
@@ -24,14 +24,6 @@ body {
 .container {
   width: 60%;
   margin: auto;
-}
-
-.spacer {
-  margin-bottom: 10rem;
-}
-
-.image-container {
-  position: relative;
 }
 
 img {
@@ -68,8 +60,17 @@ p {
   font-size: 1.5em;
 }
 
+button,
+.btn {
+  display: inline-block;
+  background: none;
+  border: none;
+  color: var(--clr-txt);
+  cursor: pointer;
+}
+
 header {
-  padding: 2rem 0 7rem 0;
+  margin: 2rem 0 8rem 0;
 }
 
 header nav {
@@ -89,6 +90,23 @@ header nav ul {
   gap: 1rem;
 }
 
+header nav ul .btn {
+  padding: 0.5rem 0.7rem;
+  background: var(--clr-ctx);
+  color: var(--clr-pri);
+  font-weight: 700;
+  border-radius: 1px;
+}
+
+header nav ul .btn:hover {
+  background: var(--clr-thr);
+  color: var(--clr-ctx);
+}
+
+main section#intro {
+  margin-bottom: 8rem;
+}
+
 main section#intro h1 {
   text-align: right;
   color: var(--clr-ctx);
@@ -96,44 +114,52 @@ main section#intro h1 {
 }
 
 main section#intro h3 {
-  margin: 12rem 0 6rem 0;
+  margin-top: 12rem;
   text-align: center;
 }
 
-main section#about .text-container {
-  position: absolute;
-  margin: 7rem 20% 0 20%;
-  top: 0;
-  left: 0;
+main section#about {
+  background: var(--clr-sec);
+  padding: 8rem 0 8rem 0;
 }
 
-main section#about .text-container h2 {
+main section#about h2 {
   margin-bottom: 1rem;
 }
 
-main section#about .text-container h2:not(:first-child) {
+main section#about h2:not(:first-child) {
   margin-top: 3rem;
 }
 
-main section#about .text-container span {
+main section#about span {
   color: var(--clr-ctx);
 }
 
-main section#about .text-container ul.materials {
+main section#about ul.materials {
   display: flex;
   justify-content: flex-start;
   gap: 1rem;
 }
 
-main section#about .text-container ul.materials li {
-  background: var(--clr-sec);
+main section#about ul.materials li {
+  background: var(--clr-pri);
   padding: 1em;
   border-radius: 5px;
   font-size: 1.2em;
 }
 
+main section#buy .form-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+main section#buy .form-container div {
+  width: 100%;
+}
+
 footer {
   padding: 10rem 0 10rem 0;
+  border-top: 0.5px solid var(--clr-bar);
 }
 
 footer p {

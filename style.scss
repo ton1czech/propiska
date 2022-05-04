@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Kurale&family=Montserrat:wght@200;400;700;900&display=swap');
 
-:root,
-:root::after,
-:root::before {
+:root {
   --clr-pri: #09090a;
-  --clr-sec: #131313;
+  --clr-sec: #191919;
+  --clr-thr: #4e4e4e;
   --clr-ctx: #40b66b;
   --clr-txt: #e2e2e2;
+  --clr-bar: #474747;
 }
 
 * {
@@ -25,14 +25,6 @@ body {
 .container {
   width: 60%;
   margin: auto;
-}
-
-.spacer {
-  margin-bottom: 10rem;
-}
-
-.image-container {
-  position: relative;
 }
 
 img {
@@ -69,8 +61,17 @@ p {
   font-size: 1.5em;
 }
 
+button,
+.btn {
+  display: inline-block;
+  background: none;
+  border: none;
+  color: var(--clr-txt);
+  cursor: pointer;
+}
+
 header {
-  padding: 2rem 0 7rem 0;
+  margin: 2rem 0 8rem 0;
 
   nav {
     display: flex;
@@ -86,12 +87,27 @@ header {
       display: flex;
       align-items: center;
       gap: 1rem;
+
+      .btn {
+        padding: 0.5rem 0.7rem;
+        background: var(--clr-ctx);
+        color: var(--clr-pri);
+        font-weight: 700;
+        border-radius: 1px;
+
+        &:hover {
+          background: var(--clr-thr);
+          color: var(--clr-ctx);
+        }
+      }
     }
   }
 }
 
 main {
   section#intro {
+    margin-bottom: 8rem;
+
     h1 {
       text-align: right;
       color: var(--clr-ctx);
@@ -99,41 +115,48 @@ main {
     }
 
     h3 {
-      margin: 12rem 0 6rem 0;
+      margin-top: 12rem;
       text-align: center;
     }
   }
 
   section#about {
-    .text-container {
-      position: absolute;
-      margin: 7rem 20% 0 20%;
-      top: 0;
-      left: 0;
+    background: var(--clr-sec);
+    padding: 8rem 0 8rem 0;
 
-      h2 {
-        margin-bottom: 1rem;
+    h2 {
+      margin-bottom: 1rem;
 
-        &:not(:first-child) {
-          margin-top: 3rem;
-        }
+      &:not(:first-child) {
+        margin-top: 3rem;
       }
+    }
 
-      span {
-        color: var(--clr-ctx);
+    span {
+      color: var(--clr-ctx);
+    }
+
+    ul.materials {
+      display: flex;
+      justify-content: flex-start;
+      gap: 1rem;
+
+      li {
+        background: var(--clr-pri);
+        padding: 1em;
+        border-radius: 5px;
+        font-size: 1.2em;
       }
+    }
+  }
 
-      ul.materials {
-        display: flex;
-        justify-content: flex-start;
-        gap: 1rem;
+  section#buy {
+    .form-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
 
-        li {
-          background: var(--clr-sec);
-          padding: 1em;
-          border-radius: 5px;
-          font-size: 1.2em;
-        }
+      div {
+        width: 100%;
       }
     }
   }
@@ -141,6 +164,7 @@ main {
 
 footer {
   padding: 10rem 0 10rem 0;
+  border-top: 0.5px solid var(--clr-bar);
 
   p {
     font-size: 1em;
