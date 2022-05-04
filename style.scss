@@ -3,7 +3,8 @@
 :root {
   --clr-pri: #09090a;
   --clr-sec: #191919;
-  --clr-thr: #4e4e4e;
+  --clr-thr: #565656;
+  --clr-frh: #2d2d2d;
   --clr-ctx: #40b66b;
   --clr-txt: #e2e2e2;
   --clr-bar: #474747;
@@ -111,6 +112,7 @@ main {
     h3 {
       margin-top: 12rem;
       text-align: center;
+      font-weight: 200;
     }
 
     .img {
@@ -155,12 +157,55 @@ main {
   }
 
   section#buy {
+    margin: 8rem 0 8rem 0;
+
+    h3 {
+      margin-bottom: 2rem;
+    }
     .form-container {
       display: grid;
       grid-template-columns: 1fr 1fr;
+      gap: 2rem;
 
       div {
-        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .field {
+          width: 100%;
+          outline: none;
+          border: none;
+          background-color: var(--clr-sec);
+          padding: 0.8rem 1rem;
+          margin-bottom: 1rem;
+          font-size: 1.3em;
+
+          &::placeholder {
+            color: var(--clr-thr);
+          }
+
+          &:hover {
+            background-color: var(--clr-frh);
+          }
+
+          &:focus {
+            background-color: var(--clr-txt);
+          }
+        }
+
+        .btn {
+          padding: 0.8rem 1rem;
+          font-weight: 700;
+          border-radius: 1px;
+          font-size: 1.3em;
+          background: var(--clr-ctx);
+          color: var(--clr-pri);
+
+          &:hover {
+            background: var(--clr-thr);
+            color: var(--clr-ctx);
+          }
+        }
       }
     }
   }
