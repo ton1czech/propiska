@@ -11,14 +11,17 @@ tl.from('#logo', { scale: 10, x: 500, y: 400, duration: 2.5 }, '+=1')
   .from('#intxt5', { y: 50, opacity: 0 }, '-=0.3')
 
 // scrollreveal
-ScrollReveal({ opacity: 0, distance: '25%', delay: 500, origin: 'left' })
+ScrollReveal({ opacity: 0, distance: '25%', delay: 600, origin: 'left' })
 
-ScrollReveal().reveal('#abt1', { origin: 'top' })
-ScrollReveal().reveal('#abt2', { delay: 1000 })
-ScrollReveal().reveal('#abt3', { delay: 1300 })
-ScrollReveal().reveal('#abt4', { delay: 1700 })
-ScrollReveal().reveal('#abt5', { delay: 2000 })
-ScrollReveal().reveal('#abt6', { delay: 2300 })
+ScrollReveal().reveal('#abt1', { origin: 'top', delay: 1000 })
+ScrollReveal().reveal('#abt2')
+ScrollReveal().reveal('#abt3')
+ScrollReveal().reveal('#abt4')
+ScrollReveal().reveal('#abt5')
+ScrollReveal().reveal('#abt6')
 
-ScrollReveal().reveal('#abt7', { delay: 2800 })
-ScrollReveal().reveal('#abt8', { delay: 3100 })
+ScrollReveal().reveal('#abt7', { origin: 'top', delay: 1000 })
+ScrollReveal().reveal('#abt8')
+
+ScrollReveal().reveal('#buy1', { origin: 'top', delay: 1000 })
+ScrollReveal().reveal('#buy2', { origin: 'bottom' })
