@@ -107,15 +107,19 @@ main section#intro {
   margin-bottom: 8rem;
 }
 
-main section#intro h1 {
-  text-align: right;
-  color: var(--clr-ctx);
-  font-weight: 800;
-}
-
 main section#intro h3 {
   margin-top: 12rem;
   text-align: center;
+}
+
+main section#intro .img {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+main section#intro .img img {
+  width: 50%;
 }
 
 main section#about {

@@ -108,15 +108,19 @@ main {
   section#intro {
     margin-bottom: 8rem;
 
-    h1 {
-      text-align: right;
-      color: var(--clr-ctx);
-      font-weight: 800;
-    }
-
     h3 {
       margin-top: 12rem;
       text-align: center;
+    }
+
+    .img {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: flex-end;
+
+      img {
+        width: 50%;
+      }
     }
   }
 
