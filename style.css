@@ -65,11 +65,11 @@ h3 {
 }
 
 p {
-  font-size: 1em;
+  font-size: 1.5em;
 }
 
 header {
-  margin: 2rem 0 7rem 0;
+  padding: 2rem 0 7rem 0;
 }
 
 header nav {
@@ -86,12 +86,12 @@ header nav .logo {
 header nav ul {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
 }
 
 main section#intro h1 {
   text-align: right;
   color: var(--clr-ctx);
+  font-weight: 800;
 }
 
 main section#intro h3 {
@@ -106,10 +106,36 @@ main section#about .text-container {
   left: 0;
 }
 
+main section#about .text-container h2 {
+  margin-bottom: 1rem;
+}
+
+main section#about .text-container h2:not(:first-child) {
+  margin-top: 3rem;
+}
+
+main section#about .text-container span {
+  color: var(--clr-ctx);
+}
+
+main section#about .text-container ul.materials {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+main section#about .text-container ul.materials li {
+  background: var(--clr-sec);
+  padding: 1em;
+  border-radius: 5px;
+  font-size: 1.2em;
+}
+
 footer {
   padding: 10rem 0 10rem 0;
 }
 
 footer p {
+  font-size: 1em;
   text-align: center;
 }

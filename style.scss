@@ -66,11 +66,11 @@ h3 {
 }
 
 p {
-  font-size: 1em;
+  font-size: 1.5em;
 }
 
 header {
-  margin: 2rem 0 7rem 0;
+  padding: 2rem 0 7rem 0;
 
   nav {
     display: flex;
@@ -85,7 +85,6 @@ header {
     ul {
       display: flex;
       align-items: center;
-      gap: 1.5rem;
     }
   }
 }
@@ -95,6 +94,7 @@ main {
     h1 {
       text-align: right;
       color: var(--clr-ctx);
+      font-weight: 800;
     }
 
     h3 {
@@ -109,6 +109,31 @@ main {
       margin: 7rem 20% 0 20%;
       top: 0;
       left: 0;
+
+      h2 {
+        margin-bottom: 1rem;
+
+        &:not(:first-child) {
+          margin-top: 3rem;
+        }
+      }
+
+      span {
+        color: var(--clr-ctx);
+      }
+
+      ul.materials {
+        display: flex;
+        justify-content: flex-start;
+        gap: 1rem;
+
+        li {
+          background: var(--clr-sec);
+          padding: 1em;
+          border-radius: 5px;
+          font-size: 1.2em;
+        }
+      }
     }
   }
 }
@@ -117,6 +142,7 @@ footer {
   padding: 10rem 0 10rem 0;
 
   p {
+    font-size: 1em;
     text-align: center;
   }
 }
