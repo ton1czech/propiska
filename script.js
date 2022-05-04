@@ -25,3 +25,5 @@ ScrollReveal().reveal('#abt8')
 
 ScrollReveal().reveal('#buy1', { origin: 'top', delay: 1000 })
 ScrollReveal().reveal('#buy2', { origin: 'bottom' })
+
+ScrollReveal().reveal('#ftr1', { origin: 'right', delay: 1000 })
