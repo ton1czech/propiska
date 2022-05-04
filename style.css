@@ -24,6 +24,13 @@ body {
   overflow-x: hidden;
 }
 
+a,
+li,
+input,
+button {
+  transition: all 0.2s ease-out;
+}
+
 .container {
   width: 60%;
   margin: auto;
