@@ -19,3 +19,6 @@ ScrollReveal().reveal('#abt3', { delay: 1300 })
 ScrollReveal().reveal('#abt4', { delay: 1700 })
 ScrollReveal().reveal('#abt5', { delay: 2000 })
 ScrollReveal().reveal('#abt6', { delay: 2300 })
+
+ScrollReveal().reveal('#abt7', { delay: 2800 })
+ScrollReveal().reveal('#abt8', { delay: 3100 })
