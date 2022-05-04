@@ -159,6 +159,41 @@ main {
         padding: 1em;
         border-radius: 5px;
         font-size: 1.2em;
+
+        &:nth-child(1):hover {
+          background-color: gold;
+          color: var(--clr-pri);
+        }
+
+        &:nth-child(2):hover {
+          background-color: silver;
+          color: var(--clr-pri);
+        }
+
+        &:nth-child(3):hover {
+          background-color: #e5e4e2;
+          color: var(--clr-pri);
+        }
+
+        &:nth-child(4):hover {
+          background-color: #b87333;
+          color: var(--clr-pri);
+        }
+
+        &:nth-child(5):hover {
+          background-color: #cccccc;
+          color: var(--clr-pri);
+        }
+
+        &:nth-child(6):hover {
+          background-color: #b1b1b1;
+          color: var(--clr-pri);
+        }
+
+        &:nth-child(7):hover {
+          background-color: #070550;
+          color: var(--clr-txt);
+        }
       }
     }
   }

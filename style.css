@@ -161,6 +161,41 @@ main section#about ul.materials li {
   font-size: 1.2em;
 }
 
+main section#about ul.materials li:nth-child(1):hover {
+  background-color: gold;
+  color: var(--clr-pri);
+}
+
+main section#about ul.materials li:nth-child(2):hover {
+  background-color: silver;
+  color: var(--clr-pri);
+}
+
+main section#about ul.materials li:nth-child(3):hover {
+  background-color: #e5e4e2;
+  color: var(--clr-pri);
+}
+
+main section#about ul.materials li:nth-child(4):hover {
+  background-color: #b87333;
+  color: var(--clr-pri);
+}
+
+main section#about ul.materials li:nth-child(5):hover {
+  background-color: #cccccc;
+  color: var(--clr-pri);
+}
+
+main section#about ul.materials li:nth-child(6):hover {
+  background-color: #b1b1b1;
+  color: var(--clr-pri);
+}
+
+main section#about ul.materials li:nth-child(7):hover {
+  background-color: #070550;
+  color: var(--clr-txt);
+}
+
 main section#buy {
   margin: 8rem 0 8rem 0;
 }
