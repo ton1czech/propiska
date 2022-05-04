@@ -198,6 +198,11 @@ main {
         }
 
         &:nth-child(7):hover {
+          background-color: #818181;
+          color: var(--clr-pri);
+        }
+
+        &:nth-child(8):hover {
           background-color: #070550;
           color: var(--clr-txt);
         }

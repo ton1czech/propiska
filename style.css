@@ -199,6 +199,11 @@ main section#about ul.materials li:nth-child(6):hover {
 }
 
 main section#about ul.materials li:nth-child(7):hover {
+  background-color: #818181;
+  color: var(--clr-pri);
+}
+
+main section#about ul.materials li:nth-child(8):hover {
   background-color: #070550;
   color: var(--clr-txt);
 }
