@@ -4,6 +4,7 @@
   --clr-sec: #191919;
   --clr-thr: #565656;
   --clr-frh: #2d2d2d;
+  --clr-fth: #737373;
   --clr-ctx: #40b66b;
   --clr-txt: #e2e2e2;
   --clr-bar: #474747;
@@ -134,7 +135,11 @@ main section#about h2 {
 }
 
 main section#about h2:not(:first-child) {
-  margin-top: 3rem;
+  margin-top: 6rem;
+}
+
+main section#about p {
+  margin-bottom: 1.7rem;
 }
 
 main section#about span {
@@ -181,6 +186,7 @@ main section#buy .form-container div .field {
   padding: 0.8rem 1rem;
   margin-bottom: 1rem;
   font-size: 1.3em;
+  color: var(--clr-txt);
 }
 
 main section#buy .form-container div .field::placeholder {
@@ -192,7 +198,7 @@ main section#buy .form-container div .field:hover {
 }
 
 main section#buy .form-container div .field:focus {
-  background-color: var(--clr-txt);
+  background-color: var(--clr-fth);
 }
 
 main section#buy .form-container div .btn {

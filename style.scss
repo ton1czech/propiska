@@ -5,6 +5,7 @@
   --clr-sec: #191919;
   --clr-thr: #565656;
   --clr-frh: #2d2d2d;
+  --clr-fth: #737373;
   --clr-ctx: #40b66b;
   --clr-txt: #e2e2e2;
   --clr-bar: #474747;
@@ -134,8 +135,12 @@ main {
       margin-bottom: 1rem;
 
       &:not(:first-child) {
-        margin-top: 3rem;
+        margin-top: 6rem;
       }
+    }
+
+    p {
+      margin-bottom: 1.7rem;
     }
 
     span {
@@ -179,6 +184,7 @@ main {
           padding: 0.8rem 1rem;
           margin-bottom: 1rem;
           font-size: 1.3em;
+          color: var(--clr-txt);
 
           &::placeholder {
             color: var(--clr-thr);
@@ -189,7 +195,7 @@ main {
           }
 
           &:focus {
-            background-color: var(--clr-txt);
+            background-color: var(--clr-fth);
           }
         }
 
