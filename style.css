@@ -273,3 +273,15 @@ footer p {
   font-size: 1em;
   text-align: center;
 }
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding-bottom: 5rem;
+  font-size: 0.8em;
+}
+
+footer ul li:hover {
+  color: var(--clr-ctx);
+}

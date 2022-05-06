@@ -274,4 +274,18 @@ footer {
     font-size: 1em;
     text-align: center;
   }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding-bottom: 5rem;
+    font-size: 0.8em;
+
+    li {
+      &:hover {
+        color: var(--clr-ctx);
+      }
+    }
+  }
 }
