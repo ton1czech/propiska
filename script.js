@@ -1,11 +1,15 @@
 document.querySelector('.year').innerHTML = new Date().getFullYear()
 
 var tl = gsap.timeline({ defaults: { duration: 1 } })
-tl.from('#logo', { scale: 10, x: 500, y: 400, duration: 2 }, '+=1')
+tl.from('#logo', { scale: 10, x: 500, y: 400, duration: 2 }, '+=0.75')
   .from('#intxt1', { x: -300, opacity: 0 }, '-=1.2')
   .from('#intxt2', { x: -300, opacity: 0 }, '-=1')
   .from('#intxt3', { x: -300, opacity: 0 }, '-=0.8')
-  .from('#intxt4', { x: 300, opacity: 0 }, '-=0.3')
+  .to('#pen', {
+    duration: 1.7,
+    clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
+    ease: 'expo.out',
+  })
   .from('#navbar', { y: 100, opacity: 0 })
   .from('#intxt5', { y: 50, opacity: 0 }, '-=0.3')
 

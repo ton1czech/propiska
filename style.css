@@ -131,6 +131,7 @@ main section#intro .img {
 
 main section#intro .img img {
   width: 50%;
+  clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
 }
 
 main section#about {
