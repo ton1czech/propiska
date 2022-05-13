@@ -1,14 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Kurale&family=Montserrat:wght@200;400;700;900&display=swap');
 
 :root {
+  --clr-txt: #e2e2e2;
+
+  --clr-bar: #474747;
+
   --clr-pri: #09090a;
   --clr-sec: #191919;
-  --clr-thr: #565656;
-  --clr-frh: #2d2d2d;
-  --clr-fth: #737373;
-  --clr-ctx: #40b66b;
-  --clr-txt: #e2e2e2;
-  --clr-bar: #474747;
+
+  --clr-ctx: #a85cf9;
+  --clr-ctx2: #5534a5;
+
+  --clr-formhover: #2d2d2d;
+  --clr-formtxt: #565656;
+  --clr-formfocus: #737373;
+  --clr-formtxtfocus: #ccc;
 }
 
 * {
@@ -28,7 +34,9 @@ body {
 a,
 li,
 input,
-button {
+button,
+section#intro .img img,
+section#intro h2 {
   transition: all 0.2s ease-out;
 }
 
@@ -81,7 +89,7 @@ button,
 }
 
 header {
-  padding: 2rem 0 8rem 0;
+  margin: 2rem 0 8rem 0;
 
   nav {
     display: flex;
@@ -106,8 +114,7 @@ header {
         border-radius: 1px;
 
         &:hover {
-          background: var(--clr-thr);
-          color: var(--clr-ctx);
+          background: var(--clr-ctx2);
         }
       }
     }
@@ -124,6 +131,12 @@ main {
       font-weight: 200;
     }
 
+    h2 {
+      &:hover {
+        color: var(--clr-ctx2);
+      }
+    }
+
     .img {
       margin-top: 2rem;
       display: flex;
@@ -131,7 +144,11 @@ main {
 
       img {
         width: 50%;
-        clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+        clip-path: polygon(2 0, 0 0, 0 100%, 0 100%);
+
+        &:hover {
+          transform: scale(1.1) rotate(-3deg);
+        }
       }
     }
   }
@@ -149,7 +166,8 @@ main {
     }
 
     p {
-      margin-bottom: 1.2rem;
+      margin-bottom: 1.25rem;
+      line-height: 1.1;
     }
 
     span {
@@ -237,15 +255,19 @@ main {
           color: var(--clr-txt);
 
           &::placeholder {
-            color: var(--clr-thr);
+            color: var(--clr-formtxt);
           }
 
           &:hover {
-            background-color: var(--clr-frh);
+            background-color: var(--clr-formhover);
           }
 
-          &:focus {
-            background-color: var(--clr-fth);
+          &:focus-visible {
+            background-color: var(--clr-formfocus);
+
+            &::placeholder {
+              color: var(--clr-formtxtfocus);
+            }
           }
         }
 
@@ -258,8 +280,7 @@ main {
           color: var(--clr-pri);
 
           &:hover {
-            background: var(--clr-thr);
-            color: var(--clr-ctx);
+            background: var(--clr-ctx2);
           }
         }
       }

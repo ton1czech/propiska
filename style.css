@@ -1,13 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Kurale&family=Montserrat:wght@200;400;700;900&display=swap");
 :root {
-  --clr-pri: #09090a;
-  --clr-sec: #191919;
-  --clr-thr: #565656;
-  --clr-frh: #2d2d2d;
-  --clr-fth: #737373;
-  --clr-ctx: #40b66b;
   --clr-txt: #e2e2e2;
   --clr-bar: #474747;
+  --clr-pri: #09090a;
+  --clr-sec: #191919;
+  --clr-ctx: #a85cf9;
+  --clr-ctx2: #5534a5;
+  --clr-formhover: #2d2d2d;
+  --clr-formtxt: #565656;
+  --clr-formfocus: #737373;
+  --clr-formtxtfocus: #ccc;
 }
 
 * {
@@ -27,7 +29,9 @@ body {
 a,
 li,
 input,
-button {
+button,
+section#intro .img img,
+section#intro h2 {
   transition: all 0.2s ease-out;
 }
 
@@ -80,7 +84,7 @@ button,
 }
 
 header {
-  padding: 2rem 0 8rem 0;
+  margin: 2rem 0 8rem 0;
 }
 
 header nav {
@@ -109,8 +113,7 @@ header nav ul .btn {
 }
 
 header nav ul .btn:hover {
-  background: var(--clr-thr);
-  color: var(--clr-ctx);
+  background: var(--clr-ctx2);
 }
 
 main section#intro {
@@ -123,6 +126,10 @@ main section#intro h3 {
   font-weight: 200;
 }
 
+main section#intro h2:hover {
+  color: var(--clr-ctx2);
+}
+
 main section#intro .img {
   margin-top: 2rem;
   display: flex;
@@ -131,7 +138,11 @@ main section#intro .img {
 
 main section#intro .img img {
   width: 50%;
-  clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+  clip-path: polygon(2 0, 0 0, 0 100%, 0 100%);
+}
+
+main section#intro .img img:hover {
+  transform: scale(1.1) rotate(-3deg);
 }
 
 main section#about {
@@ -148,7 +159,8 @@ main section#about h2:not(:first-child) {
 }
 
 main section#about p {
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.25rem;
+  line-height: 1.1;
 }
 
 main section#about span {
@@ -240,15 +252,19 @@ main section#buy .form-container div .field {
 }
 
 main section#buy .form-container div .field::placeholder {
-  color: var(--clr-thr);
+  color: var(--clr-formtxt);
 }
 
 main section#buy .form-container div .field:hover {
-  background-color: var(--clr-frh);
+  background-color: var(--clr-formhover);
 }
 
-main section#buy .form-container div .field:focus {
-  background-color: var(--clr-fth);
+main section#buy .form-container div .field:focus-visible {
+  background-color: var(--clr-formfocus);
+}
+
+main section#buy .form-container div .field:focus-visible::placeholder {
+  color: var(--clr-formtxtfocus);
 }
 
 main section#buy .form-container div .btn {
@@ -261,8 +277,7 @@ main section#buy .form-container div .btn {
 }
 
 main section#buy .form-container div .btn:hover {
-  background: var(--clr-thr);
-  color: var(--clr-ctx);
+  background: var(--clr-ctx2);
 }
 
 footer {
