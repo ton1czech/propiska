@@ -144,7 +144,7 @@ main {
 
       img {
         width: 50%;
-        clip-path: polygon(2 0, 0 0, 0 100%, 0 100%);
+        clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
 
         &:hover {
           transform: scale(1.1) rotate(-3deg);

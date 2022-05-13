@@ -5,11 +5,18 @@ tl.from('#logo', { scale: 10, x: 500, y: 400, duration: 2 }, '+=0.75')
   .from('#intxt1', { x: -300, opacity: 0 }, '-=1.2')
   .from('#intxt2', { x: -300, opacity: 0 }, '-=1')
   .from('#intxt3', { x: -300, opacity: 0 }, '-=0.8')
-  .to('#pen', {
-    duration: 1.7,
-    clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
-    ease: 'expo.out',
-  })
+  .fromTo(
+    '#pen',
+    {
+      clipPath: 'polygon(0 0, 0 0, 0 100%, 0 100%)',
+    },
+    {
+      duration: 1.7,
+      clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
+      ease: 'expo.out',
+    },
+    '-=0.7'
+  )
   .from('#navbar', { y: 100, opacity: 0 })
   .from('#intxt5', { y: 50, opacity: 0 }, '-=0.3')
 
