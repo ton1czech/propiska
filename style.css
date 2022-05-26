@@ -320,3 +320,63 @@ footer ul {
 footer ul li:hover {
   color: var(--clr-ctx);
 }
+
+@media screen and (max-width: 666px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  h2 {
+    font-size: 3em;
+  }
+  h3 {
+    font-size: 1.3em;
+  }
+  main section#intro {
+    margin-bottom: 6rem;
+  }
+  main section#intro h3 {
+    margin-top: 6rem;
+  }
+  main section#intro .img {
+    margin-top: 6rem;
+  }
+  main section#intro .img img {
+    width: 75%;
+  }
+  main section#about {
+    padding: 6rem 0 6rem 0;
+  }
+  main section#about h2 {
+    font-size: 2.2em;
+  }
+  main section#about h3 {
+    font-size: 1.7em;
+  }
+  main section#about p {
+    font-size: 1.3em;
+  }
+  main section#about .cards {
+    grid-template-columns: 1fr;
+  }
+  main section#about ul.materials {
+    gap: 0.6rem;
+  }
+  main section#about ul.materials li {
+    padding: 0.7em;
+    font-size: 1.1em;
+  }
+  main section#buy {
+    margin: 6rem 0 6rem 0;
+  }
+  main section#buy .form-container {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  footer {
+    padding: 6rem 0 6rem 0;
+  }
+  footer ul {
+    gap: 2rem;
+  }
+}

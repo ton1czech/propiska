@@ -330,3 +330,82 @@ footer {
     }
   }
 }
+
+@media screen and (max-width: 666px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  h2 {
+    font-size: 3em;
+  }
+
+  h3 {
+    font-size: 1.3em;
+  }
+
+  main {
+    section#intro {
+      margin-bottom: 6rem;
+
+      h3 {
+        margin-top: 6rem;
+      }
+
+      .img {
+        margin-top: 6rem;
+
+        img {
+          width: 75%;
+        }
+      }
+    }
+
+    section#about {
+      padding: 6rem 0 6rem 0;
+
+      h2 {
+        font-size: 2.2em;
+      }
+
+      h3 {
+        font-size: 1.7em;
+      }
+
+      p {
+        font-size: 1.3em;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      ul.materials {
+        gap: 0.6rem;
+
+        li {
+          padding: 0.7em;
+          font-size: 1.1em;
+        }
+      }
+    }
+
+    section#buy {
+      margin: 6rem 0 6rem 0;
+
+      .form-container {
+        grid-template-columns: 1fr;
+        gap: 0;
+      }
+    }
+  }
+
+  footer {
+    padding: 6rem 0 6rem 0;
+
+    ul {
+      gap: 2rem;
+    }
+  }
+}
