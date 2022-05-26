@@ -1,15 +1,23 @@
 document.querySelector('.year').innerHTML = new Date().getFullYear()
 
+const mobile = window.innerWidth <= 666
+
 var tl = gsap.timeline({ defaults: { duration: 1 } })
-tl.from('#logo', { scale: 10, x: 500, y: 400, duration: 2 }, '+=0.75')
+tl.from(
+  '#logo',
+  {
+    scale: mobile ? 3 : 10,
+    x: mobile ? window.innerWidth / 2 - 70 : 500,
+    y: mobile ? 300 : 400,
+    duration: 2,
+  },
+  '+=0.75'
+)
   .from('#int1', { x: -300, opacity: 0 }, '-=1.2')
   .from('#int2', { x: -300, opacity: 0 }, '-=1')
   .from('#int3', { x: -300, opacity: 0 }, '-=0.8')
-  .fromTo(
+  .to(
     '#int4',
-    {
-      clipPath: 'polygon(0 0, 0 0, 0 100%, 0 100%)',
-    },
     {
       duration: 1.7,
       clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
