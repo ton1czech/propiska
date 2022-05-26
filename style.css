@@ -127,7 +127,8 @@ main section#intro h3 {
 }
 
 main section#intro h2:hover {
-  color: var(--clr-ctx2);
+  color: var(--clr-pri);
+  -webkit-text-stroke: 1px var(--clr-ctx2);
 }
 
 main section#intro .img {
