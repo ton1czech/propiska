@@ -11,7 +11,6 @@
   --clr-ctx: #a85cf9;
   --clr-ctx2: #5534a5;
 
-  --clr-formhover: #2d2d2d;
   --clr-formtxt: #565656;
   --clr-formfocus: #737373;
   --clr-formtxtfocus: #ccc;
@@ -283,10 +282,6 @@ main {
 
           &::placeholder {
             color: var(--clr-formtxt);
-          }
-
-          &:hover {
-            background-color: var(--clr-formhover);
           }
 
           &:focus-visible {

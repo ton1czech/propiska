@@ -6,7 +6,6 @@
   --clr-sec: #191919;
   --clr-ctx: #a85cf9;
   --clr-ctx2: #5534a5;
-  --clr-formhover: #2d2d2d;
   --clr-formtxt: #565656;
   --clr-formfocus: #737373;
   --clr-formtxtfocus: #ccc;
@@ -243,9 +242,6 @@ main section#buy .form-container div .field {
 }
 main section#buy .form-container div .field::placeholder {
   color: var(--clr-formtxt);
-}
-main section#buy .form-container div .field:hover {
-  background-color: var(--clr-formhover);
 }
 main section#buy .form-container div .field:focus-visible {
   background-color: var(--clr-formfocus);
