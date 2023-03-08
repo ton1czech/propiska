@@ -20,7 +20,7 @@
 
 body {
   height: 100vh;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   background: var(--clr-pri);
   color: var(--clr-txt);
   overflow-x: hidden;
@@ -49,7 +49,6 @@ a {
   color: var(--clr-txt);
   font-size: 1em;
 }
-
 a:hover {
   color: var(--clr-ctx);
 }
@@ -86,24 +85,20 @@ button,
 header {
   margin: 2rem 0 8rem 0;
 }
-
 header nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
 header nav .logo {
-  font-family: 'Kurale', serif;
+  font-family: "Kurale", serif;
   font-size: 1.7em;
 }
-
 header nav ul {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
-
 header nav ul .btn {
   padding: 0.5rem 0.7rem;
   background: var(--clr-ctx);
@@ -111,7 +106,6 @@ header nav ul .btn {
   font-weight: 700;
   border-radius: 1px;
 }
-
 header nav ul .btn:hover {
   background: var(--clr-ctx2);
 }
@@ -119,146 +113,124 @@ header nav ul .btn:hover {
 main section#intro {
   margin-bottom: 8rem;
 }
-
 main section#intro h3 {
   margin-top: 12rem;
   text-align: center;
   font-weight: 200;
 }
-
+main section#intro h2.item2 {
+  margin-left: 1rem;
+}
+main section#intro h2.item3 {
+  margin-left: 2rem;
+}
 main section#intro h2:hover {
   color: var(--clr-pri);
   -webkit-text-stroke: 1px var(--clr-ctx2);
 }
-
 main section#intro .img {
   margin-top: 2rem;
   display: flex;
   justify-content: flex-end;
 }
-
 main section#intro .img img {
   width: 50%;
   clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
 }
-
 main section#intro .img img:hover {
   transform: scale(1.1) rotate(-3deg);
 }
-
 main section#about {
   background: var(--clr-sec);
   padding: 8rem 0 8rem 0;
 }
-
 main section#about h2 {
   margin-bottom: 1.4rem;
 }
-
 main section#about h2:not(:first-child) {
   margin-top: 6rem;
 }
-
 main section#about p {
   margin-bottom: 1.25rem;
   line-height: 1.1;
 }
-
 main section#about span {
   color: var(--clr-ctx);
 }
-
 main section#about .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   flex-wrap: wrap;
   gap: 1em;
 }
-
 main section#about .cards .card {
   background-color: var(--clr-pri);
   padding: 1.5em;
   border-radius: 5px;
 }
-
 main section#about .cards .card h3 {
   margin-bottom: 1em;
   text-align: center;
 }
-
 main section#about ul.materials {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
   gap: 1rem;
 }
-
 main section#about ul.materials li {
   background: var(--clr-pri);
   padding: 1em;
   border-radius: 5px;
   font-size: 1.2em;
 }
-
 main section#about ul.materials li:nth-child(1):hover {
   background-color: gold;
   color: var(--clr-pri);
 }
-
 main section#about ul.materials li:nth-child(2):hover {
   background-color: silver;
   color: var(--clr-pri);
 }
-
 main section#about ul.materials li:nth-child(3):hover {
   background-color: #e5e4e2;
   color: var(--clr-pri);
 }
-
 main section#about ul.materials li:nth-child(4):hover {
   background-color: #b87333;
   color: var(--clr-pri);
 }
-
 main section#about ul.materials li:nth-child(5):hover {
   background-color: #cccccc;
   color: var(--clr-pri);
 }
-
 main section#about ul.materials li:nth-child(6):hover {
   background-color: #b1b1b1;
   color: var(--clr-pri);
 }
-
 main section#about ul.materials li:nth-child(7):hover {
   background-color: #818181;
   color: var(--clr-pri);
 }
-
 main section#about ul.materials li:nth-child(8):hover {
   background-color: #070550;
   color: var(--clr-txt);
 }
-
 main section#buy {
   margin: 8rem 0 8rem 0;
 }
-
 main section#buy h3 {
   margin-bottom: 2rem;
 }
-
 main section#buy .form-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
 }
-
 main section#buy .form-container div {
   display: flex;
   flex-direction: column;
 }
-
 main section#buy .form-container div .field {
   width: 100%;
   outline: none;
@@ -269,23 +241,18 @@ main section#buy .form-container div .field {
   font-size: 1.3em;
   color: var(--clr-txt);
 }
-
 main section#buy .form-container div .field::placeholder {
   color: var(--clr-formtxt);
 }
-
 main section#buy .form-container div .field:hover {
   background-color: var(--clr-formhover);
 }
-
 main section#buy .form-container div .field:focus-visible {
   background-color: var(--clr-formfocus);
 }
-
 main section#buy .form-container div .field:focus-visible::placeholder {
   color: var(--clr-formtxtfocus);
 }
-
 main section#buy .form-container div .btn {
   padding: 0.8rem 1rem;
   font-weight: 700;
@@ -294,7 +261,6 @@ main section#buy .form-container div .btn {
   background: var(--clr-ctx);
   color: var(--clr-pri);
 }
-
 main section#buy .form-container div .btn:hover {
   background: var(--clr-ctx2);
 }
@@ -303,12 +269,10 @@ footer {
   padding: 10rem 0 10rem 0;
   border-top: 0.5px solid var(--clr-bar);
 }
-
 footer p {
   font-size: 1em;
   text-align: center;
 }
-
 footer ul {
   display: flex;
   justify-content: center;
@@ -316,7 +280,6 @@ footer ul {
   padding-bottom: 5rem;
   font-size: 0.8em;
 }
-
 footer ul li:hover {
   color: var(--clr-ctx);
 }
@@ -328,6 +291,12 @@ footer ul li:hover {
   }
   h2 {
     font-size: 3em;
+  }
+  h2.item2 {
+    margin-left: 7px !important;
+  }
+  h2.item3 {
+    margin-left: 14px !important;
   }
   h3 {
     font-size: 1.3em;
