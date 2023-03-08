@@ -13,9 +13,9 @@ tl.from(
   },
   '+=0.75'
 )
-  .from('#int1', { x: -300, opacity: 0 }, '-=1.2')
-  .from('#int2', { x: -300, opacity: 0 }, '-=1')
-  .from('#int3', { x: -300, opacity: 0 }, '-=0.8')
+  .fromTo('#int1', { x: -300, opacity: 0 }, { x: 0, opacity: 1 }, '-=1.2')
+  .fromTo('#int2', { x: -300, opacity: 0 }, { x: 0, opacity: 1 }, '-=1')
+  .fromTo('#int3', { x: -300, opacity: 0 }, { x: 0, opacity: 1 }, '-=0.8')
   .to(
     '#int4',
     {
