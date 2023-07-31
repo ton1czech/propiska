@@ -1,7 +1,7 @@
 <div align='center'>
-    <h1><b>🚀 DOTFILES 🚀</b></h1>
-    <img src='' width='250' height='250' />
-    <p>fictional agency website</p>
+    <h1><b>🚀 PROPISKA 🚀</b></h1>
+    <img src='./docs/icon.png' width='250' height='250' />
+    <p>fictional product showcase website</p>
 
 ![Size](https://img.shields.io/github/languages/code-size/ton1czech/propiska.svg)
 ![License](https://img.shields.io/github/license/ton1czech/propiska.svg)
